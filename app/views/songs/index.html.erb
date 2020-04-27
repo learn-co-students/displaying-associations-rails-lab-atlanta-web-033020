@@ -1,0 +1,5 @@
+<h1>Here Are All Songs:</h1>
+<%@songs.each do |song|%>
+<%link = "#{song.artist_name} - #{song.title}"%>
+    <h2><%= link_to link, song_path(song) %> </h2>
+<% end %>

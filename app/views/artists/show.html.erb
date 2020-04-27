@@ -1,0 +1,8 @@
+<h1>Here Is The Artist You Selected:</h1>
+<h2>Artist Name: <%=@artist.name%></h2>
+<h1>Here Are All Their Songs:</h1>
+<ul>
+<%@artist.songs.each do |song|%>
+    <%= link_to song.title, song_path(song)%>
+<% end %>
+</ul>
